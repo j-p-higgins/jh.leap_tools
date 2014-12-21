@@ -1,0 +1,48 @@
+#N canvas 380 93 558 540 10;
+#X obj 2 -20 cnv 15 552 40 empty empty jh.leap_distance 3 12 0 18 -71672
+-262144 0;
+#X obj 4 270 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 4 330 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 4 440 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 81 281 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 82 341 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 102 281 Bang;
+#X obj 83 374 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 83 406 cnv 17 3 17 empty \$0-pddp.cnv.let.2 2 5 9 0 16 -228856
+-162280 0;
+#X text 103 375 Float;
+#X obj 0 494 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X text 11 3 it's about this.... big;
+#X text 116 33 [jh.leap_distance] calculates the distance between two
+hands.;
+#X obj 436 -16 jh.leap_distance;
+#X obj 206 124 jh.leap_distance;
+#X obj 206 97 metro;
+#X obj 206 77 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 206 151 5 0 0 0 x: - -;
+#X floatatom 252 173 5 0 0 0 y: - -;
+#X floatatom 299 196 5 0 0 0 z: - -;
+#X text 101 276;
+#X text 102 341 Float;
+#X text 104 406 Float;
+#X text 126 223 [jh.leap_distance] always outputs a positive value
+;
+#X text 150 280 - [jh.leap_distance] requires a metro signal to run
+\, the speed of the metro sets the refresh rate of the leapmotion;
+#X text 152 341 - The first outlet outputs distance on x axis;
+#X text 152 373 - The second outlet outputs distance on y axis;
+#X text 152 406 - The third outlet outputs distance on z axis;
+#X text 81 465 None;
+#X connect 14 0 17 0;
+#X connect 14 1 18 0;
+#X connect 14 2 19 0;
+#X connect 15 0 14 0;
+#X connect 16 0 15 0;
