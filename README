@@ -1,0 +1,7 @@
+jh.leap_tools
+
+This is a set of audio tools in Pure Data for use with the Leap Motion device, it uses Chikashi Miyama’s Leap Motion external which can be downloaded for mac here: 
+
+http://puredatajapan.info/?page_id=1514
+
+These tools form part of a research project into gestural control as an aide for electroacoustic composition.
