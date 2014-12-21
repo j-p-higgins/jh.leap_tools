@@ -1,0 +1,70 @@
+#N canvas 227 43 557 548 10;
+#X obj -1 -20 cnv 15 552 40 empty empty jh.leap_finger 3 12 0 18 -71672
+-262144 0;
+#X obj 2 255 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 2 302 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 2 409 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 80 313 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 81 346 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 81 378 cnv 17 3 17 empty \$0-pddp.cnv.let.2 2 5 9 0 16 -228856
+-162280 0;
+#X text 101 347 Float;
+#X obj -2 501 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 451 -9 jh.leap_finger;
+#X obj 46 77 jh.leap_finger 0 0;
+#X floatatom 46 100 5 0 0 0 x: - -;
+#X floatatom 98 100 5 0 0 0 y: - -;
+#X floatatom 151 100 5 0 0 0 z: - -;
+#X floatatom 213 101 5 0 0 0 x: - -;
+#X floatatom 265 101 5 0 0 0 y: - -;
+#X floatatom 318 101 5 0 0 0 z: - -;
+#X floatatom 378 102 5 0 0 0 x: - -;
+#X floatatom 430 102 5 0 0 0 y: - -;
+#X floatatom 483 102 5 0 0 0 z: - -;
+#X floatatom 124 173 5 0 0 0 x: - -;
+#X floatatom 176 173 5 0 0 0 y: - -;
+#X floatatom 229 173 5 0 0 0 z: - -;
+#X floatatom 300 174 5 0 0 0 x: - -;
+#X floatatom 352 174 5 0 0 0 y: - -;
+#X floatatom 405 174 5 0 0 0 z: - -;
+#X obj 213 78 jh.leap_finger 0 1;
+#X obj 378 79 jh.leap_finger 0 2;
+#X obj 124 150 jh.leap_finger 0 3;
+#X obj 300 151 jh.leap_finger 0 4;
+#X text 80 272 None;
+#X text 100 312 Float;
+#X text 102 378 Float;
+#X text 79 434 1) Integer;
+#X text 79 464 2) Integer;
+#X text 149 433 - (required) 0 or 1 \, tells [jh.leap_finger] which
+hand to look at.;
+#X text 165 378 - The third outlet outputs position on z axis.;
+#X text 162 345 - The second outlet outputs position on y axis.;
+#X text 161 312 - The first outlet outputs position on x axis.;
+#X text 110 213 Note: [jh.leap_finger] measures position from the tip
+of the finger (or thumb).;
+#X text 90 40 [jh.leap_finger] outputs the position of a specified
+finger.;
+#X text 150 462 - (required) 0 - 4 \, tells [jh.leap_finger] which
+finger to look at.;
+#X connect 10 0 11 0;
+#X connect 10 1 12 0;
+#X connect 10 2 13 0;
+#X connect 26 0 14 0;
+#X connect 26 1 15 0;
+#X connect 26 2 16 0;
+#X connect 27 0 17 0;
+#X connect 27 1 18 0;
+#X connect 27 2 19 0;
+#X connect 28 0 20 0;
+#X connect 28 1 21 0;
+#X connect 28 2 22 0;
+#X connect 29 0 23 0;
+#X connect 29 1 24 0;
+#X connect 29 2 25 0;

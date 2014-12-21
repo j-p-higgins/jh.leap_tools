@@ -1,0 +1,44 @@
+#N canvas 255 25 557 505 10;
+#X obj 1 -20 cnv 15 552 40 empty empty jh.leap_hand 3 12 0 18 -71672
+-262144 0;
+#X obj 4 216 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 4 270 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 4 385 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 82 280 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 83 313 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 83 345 cnv 17 3 17 empty \$0-pddp.cnv.let.2 2 5 9 0 16 -228856
+-162280 0;
+#X text 103 314 Float;
+#X obj 0 458 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 466 -9 jh.leap_hand;
+#X obj 148 88 jh.leap_hand 0;
+#X obj 299 88 jh.leap_hand 1;
+#X floatatom 148 112 5 0 0 0 x: - -;
+#X floatatom 188 133 5 0 0 0 y: - -;
+#X floatatom 229 154 5 0 0 0 z: - -;
+#X floatatom 299 113 5 0 0 0 x: - -;
+#X floatatom 339 134 5 0 0 0 y: - -;
+#X floatatom 380 155 5 0 0 0 z: - -;
+#X text 82 236 None;
+#X text 102 280 Float;
+#X text 104 345 Float;
+#X text 81 409 1) Boolean;
+#X text 151 408 - (required) 0 or 1 differentiates between first or
+second hand to enter the leap motions field of vision.;
+#X text 153 280 - The first outlet outputs position on x axis.;
+#X text 153 313 - The second outlet outputs position on y axis.;
+#X text 156 346 - The third outlet outputs position on z axis.;
+#X text 98 38 [jh.leap_hands] outputs the position of a specified hand.
+;
+#X connect 10 0 12 0;
+#X connect 10 1 13 0;
+#X connect 10 2 14 0;
+#X connect 11 0 15 0;
+#X connect 11 1 16 0;
+#X connect 11 2 17 0;
