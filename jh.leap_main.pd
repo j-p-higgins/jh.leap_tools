@@ -1,0 +1,53 @@
+#N canvas 78 83 1190 674 10;
+#X declare -path utilities;
+#X obj 435 173 leapmotion;
+#X obj 435 88 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 463 219 route hand;
+#X obj 377 173 metro 50;
+#X msg 435 108 general \$1;
+#X msg 435 129 hands_palm_position \$1;
+#X obj 463 239 s hands;
+#X obj 435 197 s general;
+#X obj 621 93 unpack 0 0 0 0 0 0;
+#X obj 621 70 r general;
+#X floatatom 663 118 5 0 0 0 Hands: - -;
+#X floatatom 684 139 5 0 0 0 Fingers: - -;
+#X obj 102 102 cnv 15 192 120 empty empty empty 20 12 0 14 -125751
+-66577 0;
+#X obj 106 107 cnv 15 184 110 empty empty Leap_Motion 5 14 0 16 -241536
+-66577 0;
+#X obj 891 19 jh.autosave jh.leap_main;
+#X obj 267 133 tgl 15 0 s_onoff empty On/Off: -45 7 0 10 -150846 -1
+-1 1 1;
+#X obj 267 67 loadbang;
+#X obj 435 65 r s_onoff;
+#X floatatom 165 152 5 0 0 0 Hands:__ nohands -;
+#X floatatom 165 172 5 0 0 0 Fingers: nofingers -;
+#X obj 663 162 s nohands;
+#X obj 684 185 s nofingers;
+#X text 111 135 Info:;
+#X obj 239 195 tgl 15 0 s_vison empty Render_Visualiser: -110 7 0 10
+-150846 -1 -1 0 1;
+#X msg 435 151 fingers_position \$1;
+#X obj 12 10 declare -path utilities;
+#X text 191 11 to do: gem visualiser of hands;
+#X connect 0 0 7 0;
+#X connect 0 1 2 0;
+#X connect 1 0 4 0;
+#X connect 1 0 5 0;
+#X connect 1 0 3 0;
+#X connect 1 0 24 0;
+#X connect 2 0 6 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 8 2 10 0;
+#X connect 8 3 11 0;
+#X connect 9 0 8 0;
+#X connect 10 0 20 0;
+#X connect 11 0 21 0;
+#X connect 16 0 15 0;
+#X connect 17 0 1 0;
+#X connect 24 0 0 0;
+#X coords 0 -1 1 1 196 124 1 100 100;
