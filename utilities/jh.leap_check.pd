@@ -1,0 +1,17 @@
+#N canvas 442 178 450 300 10;
+#X obj 76 21 loadbang;
+#X obj 76 112 spigot;
+#X obj 76 69 del 60;
+#X msg 142 45 1;
+#X floatatom 142 89 5 0 0 0 - - -;
+#X obj 142 67 r check;
+#X obj 76 158 print -error;
+#X msg 76 135 This subpatch requires jh.leap_main to run;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 7 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 1;
+#X connect 5 0 4 0;
+#X connect 7 0 6 0;

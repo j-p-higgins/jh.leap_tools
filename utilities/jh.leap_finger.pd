@@ -1,4 +1,4 @@
-#N canvas 103 466 165 181 10;
+#N canvas 495 371 165 181 10;
 #X obj 14 9 r hands;
 #X obj 14 31 route \$1;
 #X obj 14 55 route fingers;
@@ -8,6 +8,7 @@
 #X obj 14 149 outlet;
 #X obj 58 149 outlet;
 #X obj 104 149 outlet;
+#X obj 74 8 jh.leap_check;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;

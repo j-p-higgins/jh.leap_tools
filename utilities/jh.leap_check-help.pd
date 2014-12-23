@@ -1,0 +1,18 @@
+#N canvas 331 117 557 349 10;
+#X obj 1 -20 cnv 15 552 40 empty empty jh.leap_check 3 12 0 18 -71672
+-262144 0;
+#X obj 5 136 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 5 190 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 6 249 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 3 304 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X text 83 153 None;
+#X obj 458 -9 jh.leap_check;
+#X obj 223 88 jh.leap_check;
+#X text 82 210 None;
+#X text 85 273 None;
+#X text 98 38 [jh.leap_check] checks if jh.leap_main is open and displays
+an error message in the consol if it cannot detect it.;
