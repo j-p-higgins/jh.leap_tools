@@ -15,4 +15,4 @@
 #X text 82 210 None;
 #X text 85 273 None;
 #X text 98 38 [jh.leap_check] checks if jh.leap_main is open and displays
-an error message in the consol if it cannot detect it.;
+an error message in the console if it cannot detect it.;

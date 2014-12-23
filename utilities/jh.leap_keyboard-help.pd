@@ -1,0 +1,58 @@
+#N canvas 255 25 557 505 10;
+#X obj 1 -20 cnv 15 552 40 empty empty jh.leap_keyboard 3 12 0 18 -71672
+-262144 0;
+#X obj 4 216 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 4 270 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 4 385 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 82 280 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0- 5 9 0 16 -228856
+-162280 0;
+#X obj 108 280 cnv 17 3 17 empty \$0-pddp.cnv.let.1 10 5 9 0 16 -228856
+-162280 0;
+#X obj 0 458 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X text 82 236 None;
+#X obj 443 -8 jh.leap_keyboard;
+#X text 98 38 [jh.leap_keyboard] outputs a bang when a finger is pressed
+down.;
+#X obj 141 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 170 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 199 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 228 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 402 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 257 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 286 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 315 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 344 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 373 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 141 111 jh.leap_keyboard ___________________________;
+#X text 92 298 Bang;
+#X text 154 280 - Each outlet is mapped to a finger going left to right
+from hand 0 finger 4 through to hand 1 finger 4 Each outlet outputs
+a bang when the corresponding finger pushes down with force (as if
+playing a keyboard). Note \, this works best with the visualiser open
+so you can see if the hands become swapped.;
+#X text 89 408 None (dashes can be placed after the object name to
+spread out the outlets);
+#X connect 20 0 10 0;
+#X connect 20 1 11 0;
+#X connect 20 2 12 0;
+#X connect 20 3 13 0;
+#X connect 20 4 15 0;
+#X connect 20 5 16 0;
+#X connect 20 6 17 0;
+#X connect 20 7 18 0;
+#X connect 20 8 19 0;
+#X connect 20 9 14 0;

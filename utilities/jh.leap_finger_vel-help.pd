@@ -1,0 +1,71 @@
+#N canvas 139 200 557 549 10;
+#X obj -1 -20 cnv 15 552 40 empty empty jh.leap_finger_vel 3 12 0 18
+-71672 -262144 0;
+#X obj 2 255 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 2 302 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 2 409 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 80 313 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 81 346 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 81 378 cnv 17 3 17 empty \$0-pddp.cnv.let.2 2 5 9 0 16 -228856
+-162280 0;
+#X text 101 347 Float;
+#X obj -2 501 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X floatatom 18 100 5 0 0 0 x: - -;
+#X floatatom 82 100 5 0 0 0 y: - -;
+#X floatatom 147 100 5 0 0 0 z: - -;
+#X floatatom 201 101 5 0 0 0 x: - -;
+#X floatatom 265 101 5 0 0 0 y: - -;
+#X floatatom 330 101 5 0 0 0 z: - -;
+#X floatatom 386 102 5 0 0 0 x: - -;
+#X floatatom 450 102 5 0 0 0 y: - -;
+#X floatatom 515 102 5 0 0 0 z: - -;
+#X floatatom 110 173 5 0 0 0 x: - -;
+#X floatatom 174 173 5 0 0 0 y: - -;
+#X floatatom 239 173 5 0 0 0 z: - -;
+#X floatatom 300 174 5 0 0 0 x: - -;
+#X floatatom 364 174 5 0 0 0 y: - -;
+#X floatatom 429 174 5 0 0 0 z: - -;
+#X text 80 272 None;
+#X text 100 312 Float;
+#X text 102 378 Float;
+#X text 79 434 1) Integer;
+#X text 79 464 2) Integer;
+#X obj 423 -8 jh.leap_finger_vel;
+#X obj 18 77 jh.leap_finger_vel 0 0;
+#X obj 201 78 jh.leap_finger_vel 0 1;
+#X obj 386 79 jh.leap_finger_vel 0 2;
+#X obj 110 150 jh.leap_finger_vel 0 3;
+#X obj 300 151 jh.leap_finger_vel 0 4;
+#X text 89 40 [jh.leap_finger_vel] outputs the velocity of a specified
+finger.;
+#X text 161 312 - The first outlet outputs the velocity on the x axis.
+;
+#X text 162 345 - The second outlet outputs the velocity on the y axis.
+;
+#X text 165 378 - The third outlet outputs the velocity on the z axis.
+;
+#X text 149 433 - (required) 0 or 1 \, tells [jh.leap_finger_vel] which
+hand to look at.;
+#X text 150 462 - (required) 0 - 4 \, tells [jh.leap_finger_vel] which
+finger to look at.;
+#X connect 30 0 9 0;
+#X connect 30 1 10 0;
+#X connect 30 2 11 0;
+#X connect 31 0 12 0;
+#X connect 31 1 13 0;
+#X connect 31 2 14 0;
+#X connect 32 0 15 0;
+#X connect 32 1 16 0;
+#X connect 32 2 17 0;
+#X connect 33 0 18 0;
+#X connect 33 1 19 0;
+#X connect 33 2 20 0;
+#X connect 34 0 21 0;
+#X connect 34 1 22 0;
+#X connect 34 2 23 0;

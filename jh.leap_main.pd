@@ -1,14 +1,14 @@
-#N canvas 2 22 1278 752 10;
+#N canvas 1 22 1276 752 10;
 #X declare -path utilities;
-#X obj 460 175 leapmotion;
+#X obj 460 197 leapmotion;
 #X obj 460 90 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 488 221 route hand;
-#X obj 402 175 metro 50;
+#X obj 488 243 route hand;
+#X obj 402 197 metro 50;
 #X msg 460 110 general \$1;
 #X msg 460 131 hands_palm_position \$1;
-#X obj 488 241 s hands;
-#X obj 460 199 s general;
+#X obj 488 263 s hands;
+#X obj 460 221 s general;
 #X obj 603 84 unpack 0 0 0 0 0 0;
 #X obj 603 61 r general;
 #X floatatom 645 109 5 0 0 0 Hands: - -;
@@ -136,7 +136,7 @@
 #X floatatom 254 170 5 0 0 0 CPU_Peak: cpupeak -;
 #X obj 773 85 s cpu;
 #X obj 788 107 s cpupeak;
-#X obj 106 188 cnv 15 184 30 empty cnvopt Leap_Options 3 10 0 16 -241536
+#X obj 106 106 cnv 15 184 30 empty cnvopt Leap_Options 3 10 0 16 -241536
 -66577 0;
 #X obj 854 198 r opton;
 #X obj 854 220 sel 1 0;
@@ -156,24 +156,24 @@
 #X msg 194 729 dimen 640 480;
 #X msg 102 730 dimen 400 300;
 #X msg 285 728 dimen 800 600;
-#X msg 421 369 1;
-#X obj 421 391 s mediumoff;
-#X msg 575 388 0;
-#X obj 575 418 s mediumoff;
-#X obj 650 418 s largeoff;
-#X obj 575 342 r small;
-#X msg 650 387 0;
-#X msg 721 387 0;
-#X obj 650 341 r medium;
-#X obj 721 340 r large;
-#X obj 721 418 s smalloff;
-#X obj 721 364 sel 1;
-#X obj 650 365 sel 1;
-#X obj 575 366 sel 1;
-#X obj 421 346 loadbang;
+#X msg 229 368 1;
+#X obj 229 390 s mediumoff;
+#X msg 521 383 0;
+#X obj 521 413 s mediumoff;
+#X obj 596 413 s largeoff;
+#X obj 521 337 r small;
+#X msg 596 382 0;
+#X msg 667 382 0;
+#X obj 596 336 r medium;
+#X obj 667 335 r large;
+#X obj 667 413 s smalloff;
+#X obj 667 359 sel 1;
+#X obj 596 360 sel 1;
+#X obj 521 361 sel 1;
+#X obj 229 345 loadbang;
 #X msg 30 598 reset \, dimen 640 480 \, create \, 1;
 #X msg 854 277 \; cnvopttext1 pos 108 125;
-#X obj 106 188 cnv 15 184 30 empty cnvoptbg1 empty 3 10 0 16 -241536
+#X obj 106 136 cnv 15 184 30 empty cnvoptbg1 empty 3 10 0 16 -241536
 -66577 0;
 #X msg 1014 240 \; cnvopt pos 106 188;
 #X msg 1014 278 \; cnvopttext1 pos 106 196;
@@ -182,13 +182,13 @@
 #X msg 1013 383 \; largeoff pos 206 196;
 #X msg 1014 420 \; cnvoptbg1 pos 106 188;
 #X msg 1012 458 \; cnvoptbg2 pos 106 188;
-#X obj 126 196 tgl 10 0 small smalloff S: -12 5 0 10 -150846 -1 -1
+#X obj 222 130 tgl 10 0 small smalloff S: -12 5 0 10 -150846 -1 -1
+0 1;
+#X obj 248 130 tgl 10 0 medium mediumoff M: -12 5 0 10 -150846 -1 -1
 1 1;
-#X obj 166 196 tgl 10 0 medium mediumoff M: -12 5 0 10 -150846 -1 -1
+#X obj 274 130 tgl 10 0 large largeoff L: -12 5 0 10 -150846 -1 -1
 0 1;
-#X obj 206 196 tgl 10 0 large largeoff L: -12 5 0 10 -150846 -1 -1
-0 1;
-#X obj 106 196 cnv 15 15 15 empty cnvopttext1 Visualiser_Size: 3 10
+#X obj 108 125 cnv 15 15 15 empty cnvopttext1 Visualiser_Size: 3 10
 0 10 -241536 -66577 0;
 #X msg 854 422 \; cnvoptbg1 pos 106 136;
 #X msg 854 458 \; cnvoptbg2 pos 106 166;
@@ -209,9 +209,9 @@
 #X obj 900 876 jh.leap_finger 1 2;
 #X obj 1058 875 jh.leap_finger 1 3;
 #X obj 1220 874 jh.leap_finger 1 4;
-#X obj 201 199 tgl 10 0 sfingersonoff rfingersonoff Render_Fingers:
+#X obj 201 144 tgl 10 0 sfingersonoff rfingersonoff Render_Fingers:
 -90 5 0 10 -150846 -1 -1 1 1;
-#X obj 421 414 s rfingersonoff;
+#X obj 229 413 s rfingersonoff;
 #X obj 556 588 spigot;
 #X obj 556 610 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -222,9 +222,9 @@
 #X obj 590 790 r sfingersonoff;
 #X msg 855 496 \; rfingersonoff pos 201 144;
 #X msg 1017 495 \; rfingersonoff pos 201 199;
-#X obj 106 188 cnv 15 184 30 empty cnvoptbg2 empty 3 10 0 16 -241536
+#X obj 106 166 cnv 15 184 30 empty cnvoptbg2 empty 3 10 0 16 -241536
 -66577 0;
-#X obj 273 202 tgl 10 0 opton empty Opt: -26 5 0 9 -150846 -1 -1 0
+#X obj 273 202 tgl 10 0 opton empty Opt: -26 5 0 9 -150846 -1 -1 1
 1;
 #X obj 222 197 tgl 15 0 s_vison empty Visualiser: -68 7 0 10 -150846
 -1 -1 0 1;
@@ -236,17 +236,33 @@
 #X text 29 805 Stops rendering hands when out of frame;
 #X text 421 535 Renders all fingers and hands to visualiser;
 #X text 909 207 Moves options window from its hidyhole;
-#X text 419 300 Sets up basic visualiser settings on boot;
-#X text 575 306 Stops more than one gem window size being selected
+#X text 227 299 Sets up basic visualiser settings on boot;
+#X text 521 301 Stops more than one gem window size being selected
 ;
 #X obj 420 630 color 0.2 0.4 1;
 #X obj 421 846 color 0.2 1 0.4;
+#X msg 460 175 fingers_velocity \$1;
+#X obj 1384 579 gemhead;
+#X obj 1384 716 text2d;
+#X obj 1384 604 color 0.2 0.4 1;
+#X msg 1384 690 text hand 0 (blue);
+#X msg 1505 691 15;
+#X obj 1564 579 gemhead;
+#X obj 1564 718 text2d;
+#X msg 1693 693 15;
+#X obj 1564 604 color 0.2 1 0.4;
+#X msg 1564 692 text hand 1 (green);
+#X obj 1505 658 loadbang;
+#X obj 1384 629 translateXYZ 0 3.6 0;
+#X obj 1564 629 translateXYZ 0 -3.6 0;
+#X text 1382 550 prints text in gem window;
 #X connect 0 0 7 0;
 #X connect 0 1 2 0;
 #X connect 1 0 4 0;
 #X connect 1 0 5 0;
 #X connect 1 0 3 0;
 #X connect 1 0 22 0;
+#X connect 1 0 224 0;
 #X connect 2 0 6 0;
 #X connect 3 0 0 0;
 #X connect 4 0 0 0;
@@ -464,4 +480,19 @@
 #X connect 206 0 205 0;
 #X connect 222 0 26 0;
 #X connect 223 0 32 0;
+#X connect 224 0 0 0;
+#X connect 225 0 227 0;
+#X connect 227 0 236 0;
+#X connect 228 0 226 0;
+#X connect 229 0 226 1;
+#X connect 230 0 233 0;
+#X connect 232 0 231 1;
+#X connect 233 0 237 0;
+#X connect 234 0 231 0;
+#X connect 235 0 228 0;
+#X connect 235 0 229 0;
+#X connect 235 0 234 0;
+#X connect 235 0 232 0;
+#X connect 236 0 226 0;
+#X connect 237 0 231 0;
 #X coords 0 -1 1 1 196 124 1 100 100;
