@@ -1,51 +1,196 @@
-#N canvas 255 25 557 505 10;
+#N canvas 157 29 556 556 10;
 #X obj 1 -20 cnv 15 552 40 empty empty jh.leap_keyboard 3 12 0 18 -71672
 -262144 0;
-#X obj 4 216 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+#X obj 4 267 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
 -196096 -33294 0;
-#X obj 4 270 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+#X obj 4 321 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
 13 -191999 -33293 0;
-#X obj 4 385 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+#X obj 4 436 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
 0 13 -187837 -20 0;
-#X obj 82 280 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0- 5 9 0 16 -228856
+#X obj 82 331 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0- 5 9 0 16 -228856
 -162280 0;
-#X obj 108 280 cnv 17 3 17 empty \$0-pddp.cnv.let.1 10 5 9 0 16 -228856
+#X obj 108 331 cnv 17 3 17 empty \$0-pddp.cnv.let.1 10 5 9 0 16 -228856
 -162280 0;
-#X obj 0 458 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+#X obj 0 509 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
 14 -191999 -66577 0;
-#X text 82 236 None;
+#X text 82 287 None;
 #X obj 443 -8 jh.leap_keyboard;
 #X text 98 38 [jh.leap_keyboard] outputs a bang when a finger is pressed
 down.;
-#X obj 141 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 141 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 170 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 170 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 199 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 199 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 228 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 228 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 402 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 402 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 257 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 257 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 286 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 286 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 315 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 315 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 344 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 344 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 373 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 373 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 141 111 jh.leap_keyboard ___________________________;
-#X text 92 298 Bang;
-#X text 154 280 - Each outlet is mapped to a finger going left to right
+#X obj 141 116 jh.leap_keyboard ___________________________;
+#X text 92 349 Bang;
+#X text 154 331 - Each outlet is mapped to a finger going left to right
 from hand 0 finger 4 through to hand 1 finger 4 Each outlet outputs
 a bang when the corresponding finger pushes down with force (as if
 playing a keyboard). Note \, this works best with the visualiser open
 so you can see if the hands become swapped.;
-#X text 89 408 None (dashes can be placed after the object name to
+#X text 89 459 None (dashes can be placed after the object name to
 spread out the outlets);
+#N canvas 106 90 783 566 quickpoly________________________________
+0;
+#X obj 45 67 osc~ 100;
+#X obj 55 77 osc~ 200;
+#X obj 65 87 osc~ 300;
+#X obj 75 97 osc~ 400;
+#X obj 85 107 osc~ 500;
+#X obj 95 117 osc~ 600;
+#X obj 105 127 osc~ 700;
+#X obj 115 137 osc~ 800;
+#X obj 125 147 osc~ 900;
+#X obj 138 156 osc~ 1000;
+#X obj 246 226 *~;
+#X obj 256 236 *~;
+#X obj 266 246 *~;
+#X obj 276 256 *~;
+#X obj 286 266 *~;
+#X obj 296 276 *~;
+#X obj 306 286 *~;
+#X obj 316 296 *~;
+#X obj 326 306 *~;
+#X obj 336 316 *~;
+#X obj 342 165 vline~;
+#X obj 352 175 vline~;
+#X obj 362 185 vline~;
+#X obj 372 195 vline~;
+#X obj 382 205 vline~;
+#X obj 392 215 vline~;
+#X obj 402 225 vline~;
+#X obj 412 235 vline~;
+#X obj 422 245 vline~;
+#X obj 432 255 vline~;
+#X msg 407 105 0.5 2 \, 0 30 20;
+#X msg 417 115 0.5 2 \, 0 30 20;
+#X msg 427 125 0.5 2 \, 0 30 20;
+#X msg 437 135 0.5 2 \, 0 30 20;
+#X msg 447 145 0.5 2 \, 0 30 20;
+#X msg 457 155 0.5 2 \, 0 30 20;
+#X msg 467 165 0.5 2 \, 0 30 20;
+#X msg 477 175 0.5 2 \, 0 30 20;
+#X msg 487 185 0.5 2 \, 0 30 20;
+#X msg 497 195 0.5 2 \, 0 30 20;
+#X obj 194 286 *~ 0.1;
+#X obj 204 296 *~ 0.1;
+#X obj 214 306 *~ 0.1;
+#X obj 224 316 *~ 0.1;
+#X obj 234 326 *~ 0.1;
+#X obj 244 336 *~ 0.1;
+#X obj 254 346 *~ 0.1;
+#X obj 263 356 *~ 0.1;
+#X obj 274 366 *~ 0.1;
+#X obj 284 376 *~ 0.1;
+#X obj 173 412 outlet~;
+#X obj 183 422 outlet~;
+#X obj 193 432 outlet~;
+#X obj 203 442 outlet~;
+#X obj 213 452 outlet~;
+#X obj 223 462 outlet~;
+#X obj 233 472 outlet~;
+#X obj 243 482 outlet~;
+#X obj 253 492 outlet~;
+#X obj 263 502 outlet~;
+#X obj 522 18 inlet;
+#X obj 532 28 inlet;
+#X obj 542 38 inlet;
+#X obj 552 48 inlet;
+#X obj 562 58 inlet;
+#X obj 572 68 inlet;
+#X obj 582 78 inlet;
+#X obj 592 88 inlet;
+#X obj 602 98 inlet;
+#X obj 612 108 inlet;
+#X connect 0 0 10 0;
+#X connect 1 0 11 0;
+#X connect 2 0 12 0;
+#X connect 3 0 13 0;
+#X connect 4 0 14 0;
+#X connect 5 0 15 0;
+#X connect 6 0 16 0;
+#X connect 7 0 17 0;
+#X connect 8 0 18 0;
+#X connect 9 0 19 0;
+#X connect 10 0 40 0;
+#X connect 11 0 41 0;
+#X connect 12 0 42 0;
+#X connect 13 0 43 0;
+#X connect 14 0 44 0;
+#X connect 15 0 45 0;
+#X connect 16 0 46 0;
+#X connect 17 0 47 0;
+#X connect 18 0 48 0;
+#X connect 19 0 49 0;
+#X connect 20 0 10 1;
+#X connect 21 0 11 1;
+#X connect 22 0 12 1;
+#X connect 23 0 13 1;
+#X connect 24 0 14 1;
+#X connect 25 0 15 1;
+#X connect 26 0 16 1;
+#X connect 27 0 17 1;
+#X connect 28 0 18 1;
+#X connect 29 0 19 1;
+#X connect 30 0 20 0;
+#X connect 31 0 21 0;
+#X connect 32 0 22 0;
+#X connect 33 0 23 0;
+#X connect 34 0 24 0;
+#X connect 35 0 25 0;
+#X connect 36 0 26 0;
+#X connect 37 0 27 0;
+#X connect 38 0 28 0;
+#X connect 39 0 29 0;
+#X connect 40 0 50 0;
+#X connect 41 0 51 0;
+#X connect 42 0 52 0;
+#X connect 43 0 53 0;
+#X connect 44 0 54 0;
+#X connect 45 0 55 0;
+#X connect 46 0 56 0;
+#X connect 47 0 57 0;
+#X connect 48 0 58 0;
+#X connect 49 0 59 0;
+#X connect 60 0 30 0;
+#X connect 61 0 31 0;
+#X connect 62 0 32 0;
+#X connect 63 0 33 0;
+#X connect 64 0 34 0;
+#X connect 65 0 35 0;
+#X connect 66 0 36 0;
+#X connect 67 0 37 0;
+#X connect 68 0 38 0;
+#X connect 69 0 39 0;
+#X restore 141 161 pd quickpoly________________________________;
+#X obj 261 194 dac~;
+#X obj 488 36 pddp/dsp;
+#X connect 10 0 24 0;
+#X connect 11 0 24 1;
+#X connect 12 0 24 2;
+#X connect 13 0 24 3;
+#X connect 14 0 24 9;
+#X connect 15 0 24 4;
+#X connect 16 0 24 5;
+#X connect 17 0 24 6;
+#X connect 18 0 24 7;
+#X connect 19 0 24 8;
 #X connect 20 0 10 0;
 #X connect 20 1 11 0;
 #X connect 20 2 12 0;
@@ -56,3 +201,13 @@ spread out the outlets);
 #X connect 20 7 18 0;
 #X connect 20 8 19 0;
 #X connect 20 9 14 0;
+#X connect 24 0 25 0;
+#X connect 24 1 25 0;
+#X connect 24 2 25 0;
+#X connect 24 3 25 0;
+#X connect 24 4 25 0;
+#X connect 24 5 25 1;
+#X connect 24 6 25 1;
+#X connect 24 7 25 1;
+#X connect 24 8 25 1;
+#X connect 24 9 25 1;
