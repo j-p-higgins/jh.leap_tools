@@ -1,5 +1,5 @@
-#N canvas 255 25 557 505 10;
-#X obj 1 -20 cnv 15 552 40 empty empty jh.leap_fists 3 12 0 18 -71672
+#N canvas 35 130 556 503 10;
+#X obj 1 -20 cnv 15 552 40 empty empty jh.leap_fists 3 12 0 18 -60087
 -262144 0;
 #X obj 4 244 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
 -196096 -33294 0;
@@ -15,17 +15,17 @@
 14 -191999 -66577 0;
 #X text 82 264 None;
 #X obj 463 -9 jh.leap_fists;
-#X obj 233 77 jh.leap_fists;
-#X obj 233 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 234 88 jh.leap_fists;
+#X obj 234 112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 308 102 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 309 113 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 273 156 print;
-#X msg 233 121 hand 0;
-#X msg 308 122 hand 1;
+#X obj 274 167 print;
+#X msg 234 132 hand 0;
+#X msg 309 133 hand 1;
 #X text 102 308 Bang;
 #X text 103 342 Bang;
-#X text 108 38 [jh.leap_fists] outputs a bang when a fist is clenched.
+#X text 109 49 [jh.leap_fists] outputs a bang when a fist is clenched.
 ;
 #X text 153 308 - The first outlet outputs a bang when hand 0 is clenched.
 ;
@@ -34,6 +34,7 @@
 #X text 87 415 None;
 #X text 110 195 Note: The leapmotion tends to be fairly hit and miss
 with detecting if this has happened.;
+#X obj 442 36 jh.leap_main2;
 #X connect 9 0 10 0;
 #X connect 9 1 11 0;
 #X connect 10 0 13 0;

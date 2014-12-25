@@ -1,5 +1,5 @@
-#N canvas 380 93 558 540 10;
-#X obj 2 -20 cnv 15 552 40 empty empty jh.leap_distance 3 12 0 18 -71672
+#N canvas 236 93 556 539 10;
+#X obj 2 -20 cnv 15 552 40 empty empty jh.leap_distance 3 12 0 18 -60087
 -262144 0;
 #X obj 4 270 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
 -196096 -33294 0;
@@ -16,7 +16,7 @@
 #X text 103 375 Float;
 #X obj 0 494 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
 14 -191999 -66577 0;
-#X text 116 33 [jh.leap_distance] calculates the distance between two
+#X text 108 51 [jh.leap_distance] calculates the distance between two
 hands.;
 #X obj 445 -9 jh.leap_distance;
 #X obj 208 93 jh.leap_distance;
@@ -32,6 +32,7 @@ value.;
 #X text 152 341 - The first outlet outputs distance on x axis.;
 #X text 152 373 - The second outlet outputs distance on y axis.;
 #X text 152 406 - The third outlet outputs distance on z axis.;
+#X obj 440 33 jh.leap_main2;
 #X connect 11 0 12 0;
 #X connect 11 1 13 0;
 #X connect 11 2 14 0;

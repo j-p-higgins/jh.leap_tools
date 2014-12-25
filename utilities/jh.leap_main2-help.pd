@@ -1,0 +1,20 @@
+#N canvas 437 103 555 446 10;
+#X obj -1 -20 cnv 15 552 40 empty empty jh.leap_main2 3 12 0 18 -101111
+-262144 0;
+#X obj 2 255 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 3 305 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 3 351 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj -1 402 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 437 -10 jh.leap_main2;
+#X obj 203 125 jh.leap_main2;
+#X text 110 57 [jh.leap_main2] is a compact version of jh.leap_main.
+;
+#X text 101 186 Note: all patches require either jh.leap_main or jh.leap_main2
+to be running in order to function correctly;
+#X text 104 270 None;
+#X text 104 323 None;
+#X text 104 373 None;

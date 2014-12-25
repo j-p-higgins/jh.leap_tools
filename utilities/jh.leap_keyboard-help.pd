@@ -1,5 +1,5 @@
-#N canvas 157 29 556 556 10;
-#X obj 1 -20 cnv 15 552 40 empty empty jh.leap_keyboard 3 12 0 18 -71672
+#N canvas 648 38 557 556 10;
+#X obj 1 -20 cnv 15 552 40 empty empty jh.leap_keyboard 3 12 0 18 -101111
 -262144 0;
 #X obj 4 267 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
 -196096 -33294 0;
@@ -15,7 +15,7 @@
 14 -191999 -66577 0;
 #X text 82 287 None;
 #X obj 443 -8 jh.leap_keyboard;
-#X text 98 38 [jh.leap_keyboard] outputs a bang when a finger is pressed
+#X text 97 60 [jh.leap_keyboard] outputs a bang when a finger is pressed
 down.;
 #X obj 141 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -180,7 +180,8 @@ spread out the outlets);
 #X connect 69 0 39 0;
 #X restore 141 161 pd quickpoly________________________________;
 #X obj 261 194 dac~;
-#X obj 488 36 pddp/dsp;
+#X obj 485 61 pddp/dsp;
+#X obj 443 35 jh.leap_main2;
 #X connect 10 0 24 0;
 #X connect 11 0 24 1;
 #X connect 12 0 24 2;

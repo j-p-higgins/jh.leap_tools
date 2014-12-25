@@ -1,0 +1,44 @@
+#N canvas 437 103 557 613 10;
+#X obj -1 -20 cnv 15 552 40 empty empty patch_name 3 12 0 18 -101111
+-262144 0;
+#X obj 2 255 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 4 372 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 4 479 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 82 383 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 83 416 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 83 448 cnv 17 3 17 empty \$0-pddp.cnv.let.2 2 5 9 0 16 -228856
+-162280 0;
+#X obj 1 566 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 439 31 jh.leap_main2;
+#X obj 237 116 patch example;
+#X text 189 215 Note: ANy notes about patch;
+#X text 187 52 [Object] Description of patch.;
+#X obj 451 -9 patch;
+#X obj 83 279 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 84 312 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 84 344 cnv 17 3 17 empty \$0-pddp.cnv.let.2 2 5 9 0 16 -228856
+-162280 0;
+#X text 163 278 - Inlet Description;
+#X text 103 278 Data Type;
+#X text 104 313 Data Type;
+#X text 105 344 Data Type;
+#X text 102 382 Data Type;
+#X text 103 417 Data Type;
+#X text 104 448 Data Type;
+#X text 81 504 1) Data Type;
+#X text 81 534 2) Data Type;
+#X text 165 311 - Inlet Description;
+#X text 168 344 - Inlet Description;
+#X text 163 382 - Outlet Description;
+#X text 164 415 - Outlet Description;
+#X text 167 448 - Outlet Description;
+#X text 167 503 - (required/optional) Argument description;
+#X text 168 532 - (required/optional) Argument description;
