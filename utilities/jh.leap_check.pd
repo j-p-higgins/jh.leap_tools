@@ -6,7 +6,8 @@
 #X floatatom 142 89 5 0 0 0 - - -;
 #X obj 142 67 r check;
 #X obj 76 158 print -error;
-#X msg 76 135 This subpatch requires jh.leap_main to run;
+#X msg 76 136 This subpatch requires jh.leap_main or jh.leap_main2
+to run;
 #X connect 0 0 2 0;
 #X connect 0 0 3 0;
 #X connect 1 0 7 0;
