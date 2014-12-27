@@ -17,8 +17,8 @@
 -66577 0;
 #X obj 106 106 cnv 15 184 112 empty empty Leap_Motion 3 10 0 16 -241536
 -66577 0;
-#X obj 271 110 tgl 15 0 s_onoff empty On/Off: -45 7 0 10 -150846 -1
--1 1 1;
+#X obj 271 110 tgl 15 0 s_onoff noinlet On/Off: -45 7 0 10 -150846
+-1 -1 1 1;
 #X obj 267 67 loadbang;
 #X obj 460 67 r s_onoff;
 #X floatatom 161 149 5 0 0 0 Hands:__ nohands s_nohands;
@@ -183,9 +183,9 @@
 #X msg 1014 420 \; cnvoptbg1 pos 106 188;
 #X msg 1012 458 \; cnvoptbg2 pos 106 188;
 #X obj 126 196 tgl 10 0 small smalloff S: -12 5 0 10 -150846 -1 -1
-1 1;
-#X obj 166 196 tgl 10 0 medium mediumoff M: -12 5 0 10 -150846 -1 -1
 0 1;
+#X obj 166 196 tgl 10 0 medium mediumoff M: -12 5 0 10 -150846 -1 -1
+1 1;
 #X obj 206 196 tgl 10 0 large largeoff L: -12 5 0 10 -150846 -1 -1
 0 1;
 #X obj 106 196 cnv 15 15 15 empty cnvopttext1 Visualiser_Size: 3 10
@@ -224,9 +224,9 @@
 #X msg 1017 495 \; rfingersonoff pos 201 199;
 #X obj 106 188 cnv 15 184 30 empty cnvoptbg2 empty 3 10 0 16 -241536
 -66577 0;
-#X obj 273 202 tgl 10 0 opton empty Opt: -26 5 0 9 -150846 -1 -1 0
-1;
-#X obj 222 197 tgl 15 0 s_vison empty Visualiser: -68 7 0 10 -150846
+#X obj 273 202 tgl 10 0 opton noinlet Opt: -26 5 0 9 -150846 -1 -1
+0 1;
+#X obj 222 197 tgl 15 0 s_vison noinlet Visualiser: -68 7 0 10 -150846
 -1 -1 0 1;
 #X text 437 45 Turns on/off leap;
 #X text 602 41 Displays general info;
