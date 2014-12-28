@@ -1,0 +1,56 @@
+#N canvas 307 77 904 548 10;
+#X declare -path utilities;
+#X declare -path utilities;
+#X obj -1 -20 cnv 15 900 40 empty empty jh.leap_reverb 3 12 0 18 -60087
+-262144 0;
+#X obj 558 156 cnv 3 340 3 empty \$0-pddp.cnv.outlets outlets 8 12
+0 13 -191999 -33293 0;
+#X obj 569 184 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 570 217 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj -2 501 cnv 15 900 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 786 -10 jh.leap_main2;
+#X obj 755 504 declare -path utilities;
+#X obj 558 21 cnv 3 3 500 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 569 50 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 570 83 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 558 286 cnv 3 340 3 empty \$0-pddp.cnv.outlets arguments 8 12
+0 13 -191999 -33293 0;
+#X obj 558 420 cnv 3 340 3 empty \$0-pddp.cnv.outlets notes 8 12 0
+13 -191999 -33293 0;
+#X obj 486 30 pddp/dsp;
+#X obj 164 161 jh.leap_reverb;
+#X text 589 49 Signal;
+#X text 590 84 Signal;
+#X text 589 183 Signal;
+#X text 590 218 Signal;
+#X text 651 82 - Right channel input.;
+#X text 651 49 - Left channel input.;
+#X text 651 183 - Left channel output.;
+#X text 651 216 - Right channel output.;
+#X text 569 313 None;
+#X text 572 453 Replaying automation is fairly cpu intensive.;
+#X text 2 181 Room size is controlled;
+#X text 2 193 by distance on x axis;
+#X text 2 205 between hands 0 and 1;
+#X text 3 233 Damping is controlled;
+#X text 3 247 by the average location;
+#X text 3 261 of hands 0 and 1 on the;
+#X text 4 275 z axis.;
+#X text 4 303 Dry/Wet is controlled;
+#X text 4 317 by the average location;
+#X text 4 331 of hands 0 and 1 on the;
+#X text 4 344 y axis.;
+#X text 80 384 This toggles the leap on;
+#X text 81 398 or off for this subpatch.;
+#X text 308 84 Automation can be recorded using the Rec;
+#X text 308 98 toggle \, and played back using the loop;
+#X text 308 113 toggle. The two toggles at the top turn;
+#X text 308 128 on rec/loop for all parameters.;
+#X text 316 387 Freeze is toggled on/off by clenching/;
+#X text 316 401 unclenching a fist.;
