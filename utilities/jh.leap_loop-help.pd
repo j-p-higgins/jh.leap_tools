@@ -1,0 +1,54 @@
+#N canvas 437 103 557 613 10;
+#X obj -1 -20 cnv 15 552 40 empty empty jh.leap_loop 3 12 0 18 -101111
+-262144 0;
+#X obj 2 333 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 4 450 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 4 509 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 84 476 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 566 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 439 31 jh.leap_main2;
+#X obj 83 357 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 84 390 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 84 422 cnv 17 3 17 empty \$0-pddp.cnv.let.2 2 5 9 0 16 -228856
+-162280 0;
+#X obj 453 -9 jh.leap_loop;
+#X obj 319 160 jh.leap_loop;
+#X text 96 56 [jh.leap_loop] is a GUI utility for recording and playing
+back automation within a gesture controlled subpatch.;
+#X obj 140 133 hsl 128 15 0 127 0 0 \$0-slideroneout empty Input: -45
+7 0 10 -262144 -1 -1 0 1;
+#X floatatom 276 133 5 0 0 0 - #0-slideroneout -;
+#X obj 140 190 hsl 128 15 0 127 0 0 \$0-slidertwoout empty Output:
+-50 7 0 10 -262144 -1 -1 0 1;
+#X floatatom 276 190 5 0 0 0 - #0-slidertwoout -;
+#X obj 342 110 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 388 110 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 98 237 Note: automation loops can be an hour long before overwriting
+themselves \, each time record is pressed the previous loop is overwritten.
+;
+#X text 103 356 Float;
+#X text 164 356 - Data to be recorded.;
+#X text 104 391 Toggle;
+#X text 105 422 Toggle;
+#X text 165 389 - Toggles record on.;
+#X text 168 422 - Toggles loop on.;
+#X text 104 475 Float;
+#X text 165 475 - Outputs recorded data from input when loop is toggled.
+;
+#X text 81 534 None.;
+#X text 98 280 Note: Inlets and outlets are hidden behind canvases
+to keep subpatches looking clean however they can still be connected
+to like normal.;
+#X connect 11 0 15 0;
+#X connect 14 0 11 0;
+#X connect 17 0 11 1;
+#X connect 18 0 11 2;
