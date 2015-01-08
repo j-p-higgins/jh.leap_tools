@@ -1,4 +1,4 @@
-#N canvas 294 124 1012 588 10;
+#N canvas 540 95 1012 588 10;
 #X obj 612 203 timer;
 #X obj 612 184 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -47,7 +47,7 @@
 #X obj 526 238 s \$0-recoff;
 #X obj 248 241 s \$0-loopoff;
 #X obj 438 427 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 38 1;
+-1 -1 12700 1;
 #X msg 318 185 const 0;
 #X obj 318 212 s \$0-looper;
 #X floatatom 203 321 5 0 0 0 - - -;
@@ -55,6 +55,10 @@
 #X obj 177 40 inlet;
 #X obj 92 62 s \$0-recoff;
 #X obj 177 64 s \$0-loopoff;
+#X obj 669 396 r \$0-rec;
+#X obj 738 396 r \$0-loop;
+#X obj 668 424 outlet;
+#X obj 740 422 outlet;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 1;
@@ -96,4 +100,6 @@
 #X connect 39 0 31 0;
 #X connect 40 0 42 0;
 #X connect 41 0 43 0;
+#X connect 44 0 46 0;
+#X connect 45 0 47 0;
 #X coords 0 -1 1 1 88 18 1 100 100;
