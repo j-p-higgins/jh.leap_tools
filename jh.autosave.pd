@@ -1,31 +1,31 @@
-#N canvas 1539 521 826 579 12;
+#N canvas 267 289 826 579 12;
 #X msg 225 330 menusave \;;
 #X obj 225 276 metro 150000;
 #X obj 306 251 * 60000;
 #X obj 225 355 s pd-\$1;
 #X obj 225 303 t b;
-#X obj 102 103 cnv 15 192 86 empty empty empty 20 12 0 14 -125751 -66577
+#X obj 102 102 cnv 15 192 86 empty empty empty 20 12 0 14 -125751 -66577
 0;
-#X obj 106 108 cnv 15 184 77 empty empty AutoSave 5 11 0 14 -241536
+#X obj 106 107 cnv 15 184 77 empty empty AutoSave 5 11 0 14 -241536
 -66577 0;
 #X obj 100 201 loadbang;
 #X msg 101 277 label pd-\$1;
-#X obj 107 128 cnv 15 15 15 empty empty Patch: 5 11 0 10 -241536 -66577
+#X obj 107 127 cnv 15 15 15 empty empty Patch: 5 11 0 10 -241536 -66577
 0;
-#X obj 150 127 cnv 15 15 15 empty rcnv pd-\$1 5 11 0 12 -241536 -66577
+#X obj 150 126 cnv 15 15 15 empty rcnv pd-\$1 5 11 0 12 -241536 -66577
 0;
 #X obj 101 302 s rcnv;
-#X obj 114 162 hsl 128 16 1 20 0 0 \$1_time \$1_loadtime Time_(minutes):
--2 -8 0 10 -150846 -1 -1 0 1;
-#X floatatom 248 162 5 0 0 0 - #1_time -;
+#X obj 114 161 hsl 128 16 1 20 0 0 \$1_time \$1_loadtime Time_(minutes):
+-2 -8 0 10 -150846 -1 -1 2674 1;
+#X floatatom 248 161 5 0 0 0 - #1_time -;
 #X msg 102 325 5;
 #X obj 102 350 s \$1_loadtime;
-#X obj 272 111 tgl 15 0 \$1_sendonoff \$1_onoff empty 17 7 0 10 -150846
--1 -1 0 1;
+#X obj 272 110 tgl 15 0 \$1_sendonoff \$1_onoff empty 17 7 0 10 -150846
+-1 -1 1 1;
 #X msg 100 226 1;
 #X obj 100 251 s \$1_onoff;
 #X obj 306 227 r \$1_time;
-#X obj 225 227 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 225 227 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 225 201 r \$1_sendonoff;
 #X connect 0 0 3 0;
@@ -41,4 +41,4 @@
 #X connect 19 0 2 0;
 #X connect 20 0 1 0;
 #X connect 21 0 20 0;
-#X coords 0 -1 1 1 197 92 1 100 100;
+#X coords 0 -1 1 1 196 90 1 100 100;
