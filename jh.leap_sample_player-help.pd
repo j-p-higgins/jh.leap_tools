@@ -1,0 +1,68 @@
+#N canvas 117 110 904 548 10;
+#X declare -path utilities;
+#X declare -path utilities;
+#X obj -1 -20 cnv 15 900 40 empty empty jh.leap_sample_player 3 12
+0 18 -60087 -262144 0;
+#X obj 558 121 cnv 3 340 3 empty \$0-pddp.cnv.outlets outlets 8 12
+0 13 -191999 -33293 0;
+#X obj 569 149 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 611 149 cnv 17 3 17 empty \$0-pddp.cnv.let.1 9 5 9 0 16 -228856
+-162280 0;
+#X obj 590 149 cnv 17 3 17 empty \$0-pddp.cnv.let.2 - 5 9 0 16 -228856
+-162280 0;
+#X obj -2 501 cnv 15 900 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 786 -10 jh.leap_main2;
+#X obj 755 504 declare -path utilities;
+#X obj 558 21 cnv 3 3 500 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 558 251 cnv 3 340 3 empty \$0-pddp.cnv.outlets arguments 8 12
+0 13 -191999 -33293 0;
+#X obj 558 317 cnv 3 340 3 empty \$0-pddp.cnv.outlets notes 8 12 0
+13 -191999 -33293 0;
+#X obj 486 30 pddp/dsp;
+#X obj 146 159 jh.leap_sample_player;
+#X obj 263 379 dac~;
+#X obj 200 339 *~ 0.2;
+#X obj 338 337 *~ 0.2;
+#X text 118 77 Load a soundfile per finger by clicking the coresponding
+bang under Open_sf: to open the open panel \, once you have clicked
+a bang it will change colour to remind you that you have done that
+one. To reset the colours click the small bang next to the hand number.
+;
+#X text 114 409 Play a sound file by pressing down the corresponding
+finger or clicking a bang under Play_sf:.;
+#X text 19 284 You can record the;
+#X text 20 298 input from the leap;
+#X text 21 311 and loop it.;
+#X text 408 271 This stops all sound;
+#X text 409 286 files playing \, useful;
+#X text 409 301 if you accidentally;
+#X text 408 317 load a 20 minute sound;
+#X text 410 334 file.;
+#X text 589 49 None;
+#X text 580 168 Signal;
+#X text 651 148 - Each outlet outputs one fingers sound;
+#X text 664 163 file.;
+#X text 590 279 None;
+#X text 571 438 The player accepts mono or stereo files \, however
+;
+#X text 571 454 stereo files are mixed down to mono before output.
+;
+#X obj 655 395 jh.leap_keyboard-help;
+#X text 570 342 This sample player uses [jh.leap_keyboard] as its;
+#X text 570 359 main input method \, see its help file for more info.
+;
+#X connect 12 0 14 0;
+#X connect 12 1 14 0;
+#X connect 12 2 14 0;
+#X connect 12 3 14 0;
+#X connect 12 4 14 0;
+#X connect 12 5 15 0;
+#X connect 12 6 15 0;
+#X connect 12 7 15 0;
+#X connect 12 8 15 0;
+#X connect 12 9 15 0;
+#X connect 14 0 13 0;
+#X connect 15 0 13 1;

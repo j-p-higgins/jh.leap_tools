@@ -1,0 +1,54 @@
+#N canvas 307 77 905 548 10;
+#X declare -path utilities;
+#X declare -path utilities;
+#X obj -1 -20 cnv 15 900 40 empty empty jh.leap_pan 3 12 0 18 -60087
+-262144 0;
+#X obj 558 88 cnv 3 340 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 569 116 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 610 116 cnv 17 3 17 empty \$0-pddp.cnv.let.1 7 5 9 0 16 -228856
+-162280 0;
+#X obj 570 166 cnv 17 3 17 empty \$0-pddp.cnv.let.2 8 5 9 0 16 -228856
+-162280 0;
+#X obj -2 501 cnv 15 900 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 786 -10 jh.leap_main2;
+#X obj 755 504 declare -path utilities;
+#X obj 558 21 cnv 3 3 500 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 569 50 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 558 213 cnv 3 340 3 empty \$0-pddp.cnv.outlets arguments 8 12
+0 13 -191999 -33293 0;
+#X obj 558 282 cnv 3 340 3 empty \$0-pddp.cnv.outlets notes 8 12 0
+13 -191999 -33293 0;
+#X obj 486 30 pddp/dsp;
+#X obj 1 56 jh.leap_pan;
+#X text 599 49 Signal;
+#X text 651 49 - Mono audio input to be panned.;
+#X text 579 137 Signal;
+#X obj 590 116 cnv 17 3 17 empty \$0-pddp.cnv.let.1 - 5 9 0 16 -228856
+-162280 0;
+#X text 591 166 Signal;
+#X text 569 240 None.;
+#X text 3 408 The pan window takes input for a single hand to control
+the postioning of the sound source within the speaker field. The x
+axis of the leap is mapped to the y axis of the panning window and
+the z axis of the leap is mapped to the y axis of the panning window
+(this makes more sense when you actually try it out);
+#X text 639 115 - The first 8 outlets output the audio;
+#X text 653 131 signal for the numbered speakers in the;
+#X text 655 146 pan window.;
+#X text 642 166 - The final outlet outputs the signal for;
+#X text 649 181 the LFE if switched on.;
+#X text 566 315 The wiggle toggle doesnt work when using mouse input
+\,;
+#X text 568 329 but does work with the random toggle and when looping
+;
+#X text 568 344 automation.;
+#X text 566 369 If you open and edit the patch ensure to set the;
+#X text 566 383 speakers to 0channel position before saving.;
+#X text 409 411 Custom speaker layouts;
+#X text 409 424 can be created using;
+#X text 409 439 the Speaker X/Y pannel.;
