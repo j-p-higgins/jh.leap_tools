@@ -1,14 +1,14 @@
-#N canvas 124 171 1029 655 10;
+#N canvas 151 161 1029 655 10;
 #X declare -path utilities;
-#X obj 460 217 leapmotion;
+#X obj 460 241 leapmotion;
 #X obj 460 90 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 488 263 route hand;
-#X obj 402 217 metro 50;
+#X obj 488 287 route hand;
+#X obj 402 241 metro 50;
 #X msg 460 110 general \$1;
 #X msg 460 131 hands_palm_position \$1;
-#X obj 488 283 s hands;
-#X obj 460 241 s general;
+#X obj 488 307 s hands;
+#X obj 460 265 s general;
 #X obj 603 84 unpack 0 0 0 0 0 0;
 #X obj 603 61 r general;
 #X floatatom 645 109 5 0 0 0 Hands: - -;
@@ -156,21 +156,21 @@
 #X msg 194 729 dimen 640 480;
 #X msg 102 730 dimen 400 300;
 #X msg 285 728 dimen 800 600;
-#X msg 229 368 1;
-#X obj 229 390 s mediumoff;
-#X msg 521 383 0;
-#X obj 521 413 s mediumoff;
-#X obj 596 413 s largeoff;
-#X obj 521 337 r small;
-#X msg 596 382 0;
-#X msg 667 382 0;
-#X obj 596 336 r medium;
-#X obj 667 335 r large;
-#X obj 667 413 s smalloff;
-#X obj 667 359 sel 1;
-#X obj 596 360 sel 1;
-#X obj 521 361 sel 1;
-#X obj 229 345 loadbang;
+#X msg 231 435 1;
+#X obj 231 457 s mediumoff;
+#X msg 523 450 0;
+#X obj 523 480 s mediumoff;
+#X obj 598 480 s largeoff;
+#X obj 523 404 r small;
+#X msg 598 449 0;
+#X msg 669 449 0;
+#X obj 598 403 r medium;
+#X obj 669 402 r large;
+#X obj 669 480 s smalloff;
+#X obj 669 426 sel 1;
+#X obj 598 427 sel 1;
+#X obj 523 428 sel 1;
+#X obj 231 412 loadbang;
 #X msg 30 598 reset \, dimen 640 480 \, create \, 1;
 #X msg 854 277 \; cnvopttext1 pos 108 125;
 #X obj 106 188 cnv 15 184 30 empty cnvoptbg1 empty 3 10 0 16 -241536
@@ -211,7 +211,7 @@
 #X obj 1220 874 jh.leap_finger 1 4;
 #X obj 201 199 tgl 10 0 sfingersonoff rfingersonoff Render_Fingers:
 -90 5 0 10 -150846 -1 -1 1 1;
-#X obj 229 413 s rfingersonoff;
+#X obj 231 480 s rfingersonoff;
 #X obj 556 588 spigot;
 #X obj 556 610 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -236,8 +236,8 @@
 #X text 29 805 Stops rendering hands when out of frame;
 #X text 421 535 Renders all fingers and hands to visualiser;
 #X text 909 207 Moves options window from its hidyhole;
-#X text 227 299 Sets up basic visualiser settings on boot;
-#X text 521 301 Stops more than one gem window size being selected
+#X text 229 366 Sets up basic visualiser settings on boot;
+#X text 523 368 Stops more than one gem window size being selected
 ;
 #X obj 420 630 color 0.2 0.4 1;
 #X obj 421 846 color 0.2 1 0.4;
@@ -258,6 +258,7 @@
 #X text 1382 550 prints text in gem window;
 #X obj 1162 208 loadbang;
 #X msg 460 152 hands_finger_count \$1;
+#X msg 460 217 hands_palm_velocity \$1;
 #X connect 0 0 7 0;
 #X connect 0 1 2 0;
 #X connect 1 0 4 0;
@@ -266,6 +267,7 @@
 #X connect 1 0 22 0;
 #X connect 1 0 224 0;
 #X connect 1 0 240 0;
+#X connect 1 0 241 0;
 #X connect 2 0 6 0;
 #X connect 3 0 0 0;
 #X connect 4 0 0 0;
@@ -507,4 +509,5 @@
 #X connect 239 0 175 0;
 #X connect 239 0 208 0;
 #X connect 240 0 0 0;
+#X connect 241 0 0 0;
 #X coords 0 -1 1 1 196 124 1 100 100;
