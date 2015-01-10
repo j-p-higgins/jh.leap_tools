@@ -1,0 +1,48 @@
+#N canvas 437 103 558 519 10;
+#X obj -1 -20 cnv 15 552 40 empty empty jh.leap_hand_vel 3 12 0 18
+-101111 -262144 0;
+#X obj 2 221 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 4 279 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 4 397 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 1 473 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 439 31 jh.leap_main2;
+#X obj 441 -10 jh.leap_hand_vel;
+#X floatatom 140 122 5 0 0 0 x: - -;
+#X floatatom 192 143 5 0 0 0 y: - -;
+#X floatatom 245 164 5 0 0 0 z: - -;
+#X floatatom 291 123 5 0 0 0 x: - -;
+#X floatatom 343 144 5 0 0 0 y: - -;
+#X floatatom 396 165 5 0 0 0 z: - -;
+#X obj 140 98 jh.leap_hand_vel 0;
+#X obj 291 98 jh.leap_hand_vel 1;
+#X obj 92 289 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 93 322 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 93 354 cnv 17 3 17 empty \$0-pddp.cnv.let.2 2 5 9 0 16 -228856
+-162280 0;
+#X text 113 323 Float;
+#X text 92 245 None;
+#X text 112 289 Float;
+#X text 114 354 Float;
+#X text 161 417 - (required) 0 or 1 differentiates between first or
+second hand to enter the leap motions field of vision.;
+#X text 163 322 - The second outlet outputs the velocity along the
+y axis.;
+#X text 163 289 - The first outlet outputs the velocity along the x
+axis.;
+#X text 166 355 - The third outlet outputs the velocity along the z
+axis.;
+#X text 77 61 [jh.leap_hand_vel] outputs the velocity of a specified
+hand.;
+#X text 91 418 1) Float;
+#X connect 13 0 7 0;
+#X connect 13 1 8 0;
+#X connect 13 2 9 0;
+#X connect 14 0 10 0;
+#X connect 14 1 11 0;
+#X connect 14 2 12 0;

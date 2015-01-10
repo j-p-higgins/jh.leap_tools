@@ -1,0 +1,41 @@
+#N canvas 437 103 557 486 10;
+#X obj -1 -20 cnv 15 552 40 empty empty jh.leap_swipe 3 12 0 18 -101111
+-262144 0;
+#X obj 2 233 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-196096 -33294 0;
+#X obj 4 293 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -191999 -33293 0;
+#X obj 4 377 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -187837 -20 0;
+#X obj 82 301 cnv 17 3 17 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 83 334 cnv 17 3 17 empty \$0-pddp.cnv.let.1 1 5 9 0 16 -228856
+-162280 0;
+#X obj 1 444 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -191999 -66577 0;
+#X obj 439 31 jh.leap_main2;
+#X obj 451 -9 jh.leap_swipe;
+#X text 121 53 [jh.leap_swipe] out puts a bang when the hand is swiped
+either left or right on the x axis.;
+#X obj 224 102 jh.leap_swipe 0;
+#X obj 224 124 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 311 124 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 224 146 left;
+#X msg 311 145 right;
+#X obj 273 175 print swipe;
+#X text 66 254 None.;
+#X text 102 300 Bang;
+#X text 103 335 Bang;
+#X text 163 333 - Outputs a bang if the hand swipes to the right.;
+#X text 163 300 - Outputs a bang if the hand swipes to the left.;
+#X text 149 401 - (required) 0 or 1 differentiates between first or
+second hand to enter the leap motions field of vision.;
+#X text 79 402 1) Float;
+#X connect 10 0 11 0;
+#X connect 10 1 12 0;
+#X connect 11 0 13 0;
+#X connect 12 0 14 0;
+#X connect 13 0 15 0;
+#X connect 14 0 15 0;
