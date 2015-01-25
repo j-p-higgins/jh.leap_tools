@@ -1,4 +1,4 @@
-#N canvas 245 114 1199 736 10;
+#N canvas 239 212 1199 736 10;
 #X declare -path utilities;
 #X obj 495 93 freeverb~;
 #X obj 9 1 declare -path utilities;
@@ -47,7 +47,7 @@
 #X obj 324 444 s \$0-param;
 #X obj 32 263 loadbang;
 #X obj 112 143 hsl 100 15 0 1.2 0 0 \$0-roomsizeout \$0-roomsize Room_Size:
--2 -8 0 10 -122174 -1 -1 5047 1;
+-2 -8 0 10 -122174 -1 -1 4072 1;
 #X floatatom 219 143 5 0 0 0 - #0-roomsizeout -;
 #X obj 117 398 r \$0-roomsizeout;
 #X obj 363 111 r \$0-roomsizeout;
@@ -68,8 +68,8 @@
 #X floatatom 829 450 5 0 0 0 - - -;
 #X obj 829 427 r \$0-leaponoff;
 #X obj 796 495 s \$0-damping;
-#X obj 112 175 hsl 100 15 0 1.2 0 0 \$0-dampingout \$0-damping Damping:
--2 -8 0 10 -122174 -1 -1 5610 1;
+#X obj 112 175 hsl 100 15 0 1 0 0 \$0-dampingout \$0-damping Damping:
+-2 -8 0 10 -122174 -1 -1 9246 1;
 #X floatatom 219 175 5 0 0 0 - #0-dampingout -;
 #X obj 364 150 r \$0-dampingout;
 #X obj 364 169 s \$0-damping;
@@ -87,11 +87,11 @@
 #X msg 416 579 0;
 #X obj 325 604 s \$0-loopoff;
 #X obj 416 604 s \$0-recoff;
-#X obj 112 207 hsl 100 15 0 1.2 0 0 \$0-dryout \$0-dry Dry: -2 -8 0
-10 -122174 -1 -1 6044 1;
+#X obj 112 207 hsl 100 15 0 1 0 0 \$0-dryout \$0-dry Dry: -2 -8 0 10
+-122174 -1 -1 5007 1;
 #X floatatom 219 207 5 0 0 0 - #0-dryout -;
-#X obj 112 239 hsl 100 15 0 1.2 0 0 \$0-wetout \$0-wet Wet: -2 -8 0
-10 -122174 -1 -1 2206 1;
+#X obj 112 239 hsl 100 15 0 1 0 0 \$0-wetout \$0-wet Wet: -2 -8 0 10
+-122174 -1 -1 4893 1;
 #X floatatom 219 239 5 0 0 0 - #0-wetout -;
 #X obj 256 238 jh.leap_loop;
 #X obj 256 206 jh.leap_loop;
