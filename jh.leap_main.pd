@@ -1,4 +1,4 @@
-#N canvas 188 22 1763 1235 10;
+#N canvas 836 32 1720 1273 10;
 #X declare -path utilities;
 #X obj 460 241 leapmotion;
 #X obj 460 90 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
@@ -227,7 +227,7 @@
 #X obj 273 202 tgl 10 0 opton noinlet Opt: -26 5 0 9 -150846 -1 -1
 1 1;
 #X obj 222 197 tgl 15 0 s_vison noinlet Visualiser: -68 7 0 10 -150846
--1 -1 0 1;
+-1 -1 1 1;
 #X text 437 45 Turns on/off leap;
 #X text 602 41 Displays general info;
 #X text 751 42 Displays DSP info;
@@ -269,6 +269,17 @@
 #X msg 762 870 1;
 #X floatatom 737 894 5 0 0 0 - - -;
 #X obj 762 822 loadbang;
+#X obj 1534 814 gemhead;
+#X msg 1459 883 draw line;
+#X obj 1534 886 translateXYZ 0 0 -2;
+#X obj 1540 956 gemhead;
+#X msg 1465 1025 draw line;
+#X obj 1540 1027 rectangle 2.65 2.65;
+#X obj 1540 1003 translateXYZ 0 0.65 -2;
+#X obj 1534 910 rectangle 2.65 2;
+#X obj 1534 861 rotate -90 1 0 0;
+#X obj 1534 838 color 0.5 0.5 0.5;
+#X obj 1540 980 color 0.5 0.5 0.5;
 #X connect 0 0 7 0;
 #X connect 0 1 2 0;
 #X connect 1 0 4 0;
@@ -536,4 +547,13 @@
 #X connect 249 0 205 0;
 #X connect 250 0 204 1;
 #X connect 251 0 249 0;
+#X connect 252 0 261 0;
+#X connect 253 0 259 0;
+#X connect 254 0 259 0;
+#X connect 255 0 262 0;
+#X connect 256 0 257 0;
+#X connect 258 0 257 0;
+#X connect 260 0 254 0;
+#X connect 261 0 260 0;
+#X connect 262 0 258 0;
 #X coords 0 -1 1 1 196 124 1 100 100;
